@@ -1,155 +1,51 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP - Edited by Nathan Wong
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Nathan's Website</title>
-		<link rel="icon" href="images/noodle.png"/>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://kit.fontawesome.com/741e844341.js" crossorigin="anonymous"></script>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- If you're looking at this... hello there! -->
 
-				<!-- Header -->
-					<header id="header">
-						<div class="content">
-							<div class="inner">
-								<h1>Nathan Wong</h1>
-								<p>Software Developer, Student, Noodle Enthusiast</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#aboutMe">About Me</a></li>
-								<li><a href="#experience">Experience</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#techStack">Tech Stack</a></li>
-							</ul>
-						</nav>
-					</header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-				<!-- Main -->
-				<div id="main">
-					<!--About Me-->
-					<article id="aboutMe">
-						<h2>Hi, my name is Nathan!</h2>
-						<p>
-							I am a grade 12 student at Bur Oak Secondary School in Ontario, Canada.
-							Currently, I'm focusing on school/programming in the hopes of pursuing a career in Software Development.
-						</p>
-						<p>
-							Most days, you'll find me coding up a new project or learning new frameworks (I swear a new one comes out every couple days).
-							Occasionally I'll also dabble in the dark arts of machine learning and competitive programming.
-						</p>
-						<p>
-							In the rare event that you're a potential employer or an admissions officer, I kindly suggest looking at the Experience, Projects, and Tech Stack tabs to
-							learn more about my technical skills.
-						</p>
-					</article>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <!-- Locomotive Scroll -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+        <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 
-					<!-- Work Experience -->
-					<article id="experience">
-						<h2 class="major">Work Experience</h2>
-						<h3>Coop Software Developer at Genexis Design Inc.</h3>
-						<h5>Sept 2020 - Jan 2021</h5>
-						<ul>
-							<li>Android application development using C# and the Unity Game Engine</li>
-							<li>Designed and implemented (de)serialization systems</li>
-							<li>Integrated deep link support using Android and Unity API's</li>
-							<li>Collaborated closely with other developers and QA to meet client expectations and requirements</li>
-						</ul>
-					</article>
 
-					<!-- Projects -->
-					<article id="projects">
-						<h2 class="major">Projects</h2>
-						<h3><a href="https://github.com/NathanWong1106/Swing-Lite-Engine" target="_blank">Javax Game Framework</a></h3>
-						<ul>
-							<li>A framework for building games in Java using javax.swing</li>
-							<li>Extensible Entity-Component-System(ECS)</li>
-							<li>Object lifecycle using Unity-like syntax</li>
-							<li>Serialization Utilities</li>
-						</ul>
-						<h3><a href="https://github.com/NathanWong1106/NoodleBot-Public-Version" target="_blank">Music Streaming Discord Bot</a></h3>
-						<ul>
-							<li>A discord chatbot built on the Discord.js library</li>
-							<li>Uses various API's such as ytdl-core to interact with the Youtube API and stream music</li>
-							<li>Interacts with a MongoDB database to read/write user and server data</li>
-							<li>Hosted on a Heroku worker dyno for 24/7 uptime</li>
-						</ul>
-						<h3><a href="https://github.com/NathanWong1106/Mediocre-Animal-Racing" target="_blank">Racing Game on Unity</a></h3>
-						<ul>
-							<li>Racing game built with Unity and C#</li>
-							<li>Rudimentary non-ML AI to play against</li>
-							<li>Use of XML serialization/deserialization of user saves/preferences</li>
-							<li>Use of LINQ to determine relative player positions</li>
-							<li>TODO: Graphical elements(3D modeling, Maps), Networking(multiplayer)</li>
-						</ul>
-						<h3><a href="https://github.com/NathanWong1106/Tensorflow-and-Python-Digit-Classification" target="_blank">MNIST Digit Classification</a></h3>
-						<ul>
-							<li>Use of Tensorflow to create a Convolutional Neural Network for Harvard's CS50 Intoduction to Artificial Intelligence with Python</li>
-							<li>Identifies handwritten digits [0-9] from an image input</li>
-						</ul>
-						<h3>Speech-To-Text Subtitle Generator (unreleased)</h3>
-						<ul>
-							<li>Uses various libraries to splice audio into recognizable chunks</li>
-							<li>Interacts with Google's Speech-To-Text API to extract words from audio chunks</li>
-							<li>Transforms decoded data into .srt format for use in video subtitles</li>
-						</ul>
-					</article>
-
-					<!-- Tech Stack -->
-					<article id="techStack">
-						<h2 class="major">Tech Stack</h2>
-						<h3>Experienced:</h3>
-						<ul>
-							<li><b>Languages: </b>C#, JavaScript</li>
-							<li><b>Tools/Frameworks: </b>Unity Game Engine, Git/Github, VSCode, Visual Studio</li>
-							<li><b>Concepts: </b>Object-Oriented Programming, Serialization/Deserialization</li>
-						</ul>
-						<h3>Comfortable: </h3>
-						<ul>
-							<li><b>Languages: </b>Python, Java</li>
-							<li><b>Tools/Frameworks: </b>React-Native, Eclipse, MongoDB</li>
-						</ul>
-						<h3>Knowledgeable:</h3>
-						<ul>
-							<li><b>Languages: </b>C++, HTML, CSS, SQL</li>
-							<li><b>Concepts: </b>AGILE</li>
-						</ul>
-					</article>
-				</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://github.com/NathanWong1106" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/nathanwong1106/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:wongnathan1106@gmail.com" target="_blank" class="icon brands"><span class="fas fa-envelope"></span></a></li>
-					</ul>
-					<div style="font-size:small">Template provided by: html5up.net</div>
-				</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Google Fonts and Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <!-- Custom -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div data-scroll-container>
+            <div class="scroll-section" id="intro" data-scroll-section>
+                <div data-scroll data-scroll-direction="vertical" data-scroll-speed="8">
+                    <h1 class="title">
+                        Nathan Wong
+                        <br/>
+                    </h1>
+                    <button class="scroll-button" data-scrollto="about"><i class="material-icons md-dark">expand_more</i></button>
+                </div>
+            </div>
+            <div class="scroll-section" id="about" data-scroll-section>
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
+                  <h1>Check Back Later :)</h1>
+                  <small> Trying to make an original website and practice HTML & CSS. 
+                      <br/> 
+                    This website is a work in progress. Check back later... maybe you'll find some cooler stuff
+                    </small>
+                </div>
+            </div>
+          </div>
+          <script src="index.js"></script>
+    </body>
 </html>
