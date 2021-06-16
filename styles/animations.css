@@ -1,0 +1,19 @@
+.title-init {
+    animation: title-init-anim 0.8s ease-in;
+}
+
+@keyframes title-init-anim {
+    from {transform: rotateX(90deg)}
+    to { transform: rotateX(0) };
+}
+
+.hover {
+    animation: hover-anim 1.5s ease-in-out infinite;
+}
+
+@keyframes hover-anim {
+    50% { transform: translateY(-5px)};
+    100%{ transform: translateY(5px)};
+
+}
+
