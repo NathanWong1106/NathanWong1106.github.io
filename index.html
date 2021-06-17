@@ -31,28 +31,107 @@
             <div class="scroll-section" id="intro">
                 <div data-scroll-section>
                     <h1 class="lerp-wrap title" data-scroll>
-                        <span data-scroll data-scroll-delay="0.2" data-scroll-speed="6">N</span>
+                        <span data-scroll data-scroll-delay="0.19" data-scroll-speed="6">N</span>
                         <span data-scroll data-scroll-delay="0.18" data-scroll-speed="6">A</span>
-                        <span data-scroll data-scroll-delay="0.16" data-scroll-speed="6">T</span>
-                        <span data-scroll data-scroll-delay="0.14" data-scroll-speed="6">H</span>
-                        <span data-scroll data-scroll-delay="0.135" data-scroll-speed="6">A</span>
-                        <span data-scroll data-scroll-delay="0.12" data-scroll-speed="6">N</span>
+                        <span data-scroll data-scroll-delay="0.17" data-scroll-speed="6">T</span>
+                        <span data-scroll data-scroll-delay="0.16" data-scroll-speed="6">H</span>
+                        <span data-scroll data-scroll-delay="0.15" data-scroll-speed="6">A</span>
+                        <span data-scroll data-scroll-delay="0.14" data-scroll-speed="6">N</span>
+                        <br/>
+                        <span data-scroll data-scroll-delay="0.12" data-scroll-speed="6">W</span>
+                        <span data-scroll data-scroll-delay="0.11" data-scroll-speed="6">O</span>
+                        <span data-scroll data-scroll-delay="0.10" data-scroll-speed="6">N</span>
+                        <span data-scroll data-scroll-delay="0.09" data-scroll-speed="6">G</span>
                     </h1>
+                    <br/>
+                    <small class="lerp-wrap">
+                        <span data-scroll data-scroll-delay="0.18" data-scroll-speed="6">Student, </span>
+                        <span data-scroll data-scroll-delay="0.15" data-scroll-speed="6">Software Developer, </span>
+                        <span data-scroll data-scroll-delay="0.12" data-scroll-speed="6">and Noodle Enthusiast</span>
+                    </small>
+                    <br/>
                     <br/>
                     <button class="scroll-button hover" data-scrollto="about"><i class="material-icons md-dark">expand_more</i></button>
                 </div>
             </div>
-            <div class="scroll-section" id="about" data-scroll-section>
-                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
-                  <h1 data-scroll class="title">Check Back Later :)</h1>
-                  <small> Trying to make an original website and practice HTML & CSS. 
-                      <br/> 
-                    This website is a work in progress. Check back later... maybe you'll find some cooler stuff
-                    </small>
+            <div class="scroll-section" id="about">
+                <div data-scroll-section>
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12">
+                        <h1 data-scroll class="title">About Me</h1>
+                        <article data-scroll class="article">
+                            <p>
+                                I'm currently a Grade 12 Student at Bur Oak Secondary School in Markham, Ontario and an 
+                                incoming student at the University of Toronto Scarborough studying Computer Science (Co-op).
+                            </p>
+                            <p>
+                                Most days, you'll find me coding up a new project or learning new frameworks (I swear a new one comes out every couple days).
+                                Occasionally I'll also dabble in the dark arts of machine learning and competitive programming.
+                            </p>
+                            <p>
+                                In the rare event that you're a potential employer, I kindly suggest looking further down to see 
+                                some of my skills and the projects that I've built.
+                            </p>
+                            <br/>
+                            <button class="scroll-button hover" data-scrollto="education"><i class="material-icons md-dark">expand_more</i></button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-section" id="education">
+                <div data-scroll-section>
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
+                        <h1 data-scroll class="title">Education</h1>
+                        <br/>
+                        <article data-scroll class="article">
+                            <h3><b>Honours Bachelor of Science - Computer Science Co-op</b></h3>
+                            <h4>University of Toronto Scarborough</h4>
+                            <h5>2021-2025</h5>
+                            <br/>
+                            <br/>
+                            <h3><b>Ontario Secondary School Diploma</b></h3>
+                            <h4>Bur Oak Secondary School</h4>
+                            <h5>2017-2021</h5>
+                            <button class="scroll-button hover" data-scrollto="experience"><i class="material-icons md-dark">expand_more</i></button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-section" id="experience">
+                <div data-scroll-section>
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12">
+                        <h1 data-scroll class="title">Experience</h1>
+                        <br/>
+                        <article data-scroll class="article">
+                            <h4><b>Coop Software Developer at Genexis Design Inc.</b></h4>
+                            <h5>Sept 2020 - Jan 2021</h5>
+                            <ul>
+                                <li>Android application development using C# and the Unity Game Engine</li>
+                                <li>Designed and implemented (de)serialization systems</li>
+                                <li>Integrated deep link support using Android and Unity API's</li>
+                                <li>Collaborated closely with other developers and QA to meet client expectations and requirements</li>
+                            </ul>
+                            <br/>
+                            <button class="scroll-button hover" data-scrollto="wip"><i class="material-icons md-dark">expand_more</i></button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-section" id="wip">
+                <div data-scroll-section>
+                    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
+                        <h1 data-scroll class="title">WIP</h1>
+                        <br/>
+                        <article data-scroll class="article">
+                            This website is a work in progress. Please check back later for more cool stuff :)
+                            <br/>
+                            <br/>
+                            <button class="scroll-button hover" data-scrollto="intro"><i class="material-icons md-dark">expand_less</i></button>
+                        </article>
+                    </div>
                 </div>
             </div>
           </div>
-          <script src="./scripts/index.js"></script>
           <script src="./scripts/customElements.js"></script>
+          <script src="./scripts/index.js"></script>
     </body>
 </html>

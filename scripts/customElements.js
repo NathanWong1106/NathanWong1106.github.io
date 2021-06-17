@@ -3,6 +3,26 @@ const runFuncForAllClasses = (func, className) => {
     Array.prototype.forEach.call(elems, func);
 }
 
+const playAnimOnVisible = (elem, animClassName) => {
+    if(elem.classList.contains("is-inview")){
+        elem.classList.add(animClassName);
+    }
+
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            if(mutation.type !== "attributes" && mutation.attributeName !== "class"){
+                return;
+            } else {
+                if(mutation.target.classList.contains("is-inview") && !mutation.target.classList.contains(animClassName)){
+                    mutation.target.classList.add(animClassName);
+                }
+            }
+        })
+    })
+
+    observer.observe(elem, {attributes: true});
+}
+
 const scrollButtonFunc = button => {
     button.onclick = () => {
         scroll.scrollTo(document.getElementById(button.dataset.scrollto));
@@ -10,25 +30,11 @@ const scrollButtonFunc = button => {
 }
 
 const titlesFunc = title => {
-    if(title.classList.contains("is-inview")){
-        title.classList.add("title-init");
-    }
+    playAnimOnVisible(title, "title-init");
+}
 
-    //Locomotive Scroll adds the "is-inview" class whenever an element is in view
-    //We can take advantage of that to play animations
-    const observer = new MutationObserver(mutations => {
-        mutations.forEach(mutation => {
-            if(mutation.type !== "attributes" && mutation.attributeName !== "class"){
-                return;
-            } else {
-                if(mutation.target.classList.contains("is-inview") && !mutation.target.classList.contains("title-init")){
-                    mutation.target.classList.add("title-init");
-                }
-            }
-        })
-    })
-
-    observer.observe(title, {attributes: true});
+const articlesFunc = article => {
+    playAnimOnVisible(article, "article-init");
 }
 
 
@@ -37,4 +43,7 @@ runFuncForAllClasses(scrollButtonFunc, "scroll-button");
 
 // Titles
 runFuncForAllClasses(titlesFunc, "title");
+
+// Articles
+runFuncForAllClasses(articlesFunc, "article");
 
