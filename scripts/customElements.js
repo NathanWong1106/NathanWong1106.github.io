@@ -99,6 +99,7 @@ const sidebarToggleFunc = toggle => {
     toggle.onclick = () => {
         let bar = sidebars[toggle.dataset.sidebar];
         bar.toggle();
+        toggle.style.transform = bar.isOpen ? "rotate(180deg)" : "rotate(0deg)";
     }
 }
 
