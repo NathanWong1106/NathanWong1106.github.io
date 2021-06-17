@@ -47,6 +47,7 @@ article {
     height: auto;
     display: grid;
     place-items: center;
+    margin-bottom: 200px;
 }
 
 .scroll-button {
