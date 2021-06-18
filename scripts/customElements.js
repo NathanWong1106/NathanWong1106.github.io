@@ -13,14 +13,16 @@ class Sidebar {
             this.elem.style.width = "0";
             this.isOpen = false;
             this.elem.style.backgroundColor = "rgba(0,0,0,0)"
+            document.getElementById("main").style.marginLeft = "0";
         }
         else if(smallScreen.matches){
             this.elem.style.width = "80vw";
-            this.elem.style.backgroundColor = "white"
+            this.elem.style.backgroundColor = "rgba(255,255,255,0.9)"
             this.isOpen = true;
         } else {
-            this.elem.style.width = "10vw";
-            this.elem.style.backgroundColor = "white"
+            this.elem.style.width = "20vw";
+            this.elem.style.backgroundColor = "rgba(255,255,255,0.9)"
+            document.getElementById("main").style.marginLeft = "20vw";
             this.isOpen = true;
         }
     }
@@ -87,7 +89,7 @@ const clearActiveNavs = () => {
 }
 
 const titlesFunc = title => {
-    playAnimOnVisible(title, "title-init");
+    //playAnimOnVisible(title, "title-init");
     addScrollSpy(title);
 }
 

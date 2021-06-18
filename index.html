@@ -29,15 +29,17 @@
     </head>
     <body>
         <nav class="sidebar nav nav-pills flex-column" id="sidebar">
-            <button class="scrollspy-nav nav-link active ms-3 my-1" data-scrollto="#about" data-spytarget="#about-title">About</button>
-            <button class="scrollspy-nav nav-link ms-3 my-1" data-scrollto="#education" data-spytarget="#education-title">Education</button>
-            <button class="scrollspy-nav nav-link ms-3 my-1" data-scrollto="#experience" data-spytarget="#experience-title">Experience</button>
+            <h1 class="sidebar-header" style="text-decoration: none;"><b>Nathan Wong</b></h1>
+            <button class="scrollspy-nav nav-link active" data-scrollto="#intro" data-spytarget="#intro-title">Intro</button>
+            <button class="scrollspy-nav nav-link" data-scrollto="#about" data-spytarget="#about-title">About</button>
+            <button class="scrollspy-nav nav-link" data-scrollto="#education" data-spytarget="#education-title">Education</button>
+            <button class="scrollspy-nav nav-link" data-scrollto="#experience" data-spytarget="#experience-title">Experience</button>
         </nav>
         <button class="sidebar-toggle" data-sidebar="sidebar"><i class="material-icons md-dark">chevron_right</i></button>
-        <div data-scroll-container>
+        <div data-scroll-container id="main">
             <div data-scroll data-scroll-repeat class="scroll-section" id="intro">
                 <div data-scroll-section>
-                    <h1 class="lerp-wrap title" data-scroll>
+                    <h1 class="lerp-wrap title title-init" id="intro-title" style="text-decoration: none;" data-scroll data-scroll-repeat>
                         <span data-scroll data-scroll-delay="0.19" data-scroll-speed="6">N</span>
                         <span data-scroll data-scroll-delay="0.18" data-scroll-speed="6">A</span>
                         <span data-scroll data-scroll-delay="0.17" data-scroll-speed="6">T</span>
@@ -64,7 +66,7 @@
             <div data-scroll data-scroll-repeat class="scroll-section" id="about">
                 <div data-scroll-section>
                     <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12">
-                        <h1 data-scroll data-scroll-repeat class="title" id="about-title">About Me</h1>
+                        <h1 data-scroll data-scroll-repeat data-scroll-speed="2.5" class="title" id="about-title">About Me</h1>
                         <article data-scroll class="article">
                             <p>
                                 I'm currently a Grade 12 Student at Bur Oak Secondary School in Markham, Ontario and an 
@@ -87,7 +89,7 @@
             <div data-scroll data-scroll-repeat class="scroll-section" id="education">
                 <div data-scroll-section>
                     <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
-                        <h1 data-scroll data-scroll-repeat class="title" id="education-title">Education</h1>
+                        <h1 data-scroll data-scroll-repeat data-scroll-speed="2.5" class="title" id="education-title">Education</h1>
                         <br/>
                         <article data-scroll class="article">
                             <h3><b>Honours Bachelor of Science - Computer Science Co-op</b></h3>
@@ -106,7 +108,7 @@
             <div data-scroll data-scroll-repeat class="scroll-section" id="experience">
                 <div data-scroll-section>
                     <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-12">
-                        <h1 data-scroll data-scroll-repeat class="title" id="experience-title">Experience</h1>
+                        <h1 data-scroll data-scroll-repeat data-scroll-speed="2.5" class="title" id="experience-title">Experience</h1>
                         <br/>
                         <article data-scroll class="article">
                             <h4><b>Coop Software Developer at Genexis Design Inc.</b></h4>
@@ -126,7 +128,7 @@
             <div data-scroll class="scroll-section" id="wip">
                 <div data-scroll-section>
                     <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">
-                        <h1 data-scroll data-scroll-repeat class="title">WIP</h1>
+                        <h1 data-scroll data-scroll-repeat data-scroll-speed="2.5" class="title">WIP</h1>
                         <br/>
                         <article data-scroll class="article">
                             This website is a work in progress. Please check back later for more cool stuff :)

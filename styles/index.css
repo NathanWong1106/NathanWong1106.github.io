@@ -8,6 +8,8 @@ body {
 h1 {
     font-weight: bold;
     margin: 0;
+    text-decoration:underline;
+    color: rgb(240, 113, 103);
 }
 
 small {
@@ -24,12 +26,24 @@ article {
     article {
         width: 80vw;
     }
+
+    .scroll-section {
+        margin-bottom: 200px;
+    }
 }
 
 @media only screen and (min-width: 601px) {
     article {
-        width: 50vw
+        width: 65vw
     }
+
+    .scroll-section {
+        margin-bottom: 300px;
+    }
+}
+
+#main {
+    transition: all 0.75s;
 }
 
 .title {
@@ -47,7 +61,6 @@ article {
     height: auto;
     display: grid;
     place-items: center;
-    margin-bottom: 200px;
 }
 
 .scroll-button {
@@ -58,7 +71,7 @@ article {
     height: 50px;
     text-align: center;
     line-height: 50%;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 .scroll-button:hover {
@@ -84,12 +97,18 @@ article {
     left: 0;
     background-color: rgba(0, 0, 0, 0);
     padding-top: 10vh;
-    transition: 0.75s;
+    transition: all 0.75s;
     overflow-x:hidden;
+    text-align: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-header {
+    margin-bottom: 30px;
 }
 
 .sidebar .scrollspy-nav {
-    width: 75%
+    width: 80%;
 }
 
 .sidebar-toggle {
