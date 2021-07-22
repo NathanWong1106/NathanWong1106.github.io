@@ -1,0 +1,30 @@
+.nav-table {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    transition: 0.35s;
+    transform-origin: top;
+}
+
+.nav-table-hidden {
+    transform: scaleY(0);
+}
+
+.nav-table-shown {
+    transform: scaleY(1);
+}
+
+.nav-row {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.35s;
+    transform-origin: right;
+}
+
+.nav-row-hidden {
+    transform: scaleX(0);
+}
+
+.nav-row-shown {
+    transform: scaleX(1);
+}

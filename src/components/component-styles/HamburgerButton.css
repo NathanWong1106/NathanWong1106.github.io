@@ -1,0 +1,13 @@
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 35px;
+    height: 5px;
+    border-radius: 0.5rem;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+

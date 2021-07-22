@@ -1,0 +1,45 @@
+.slide-in-from-left {
+    transform: scaleX(0);
+    animation-duration: 1s;
+    animation-name:slidein;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease;
+}
+
+.slide-in-from-right {
+    transform: scaleX(0);
+    animation-duration: 1s;
+    animation-name:slidein-reverse;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease;
+}
+
+@keyframes reveal-anim {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes slidein-reverse {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
