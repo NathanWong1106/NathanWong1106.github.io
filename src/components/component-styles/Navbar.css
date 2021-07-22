@@ -1,27 +1,55 @@
-.nav-table {
+.navbar {
+    max-height: fit-content;
+    overflow: hidden;
+    transition: all 0.75s;
+    transform-origin: top;
+}
+
+.navbar-hidden {
+    transition: all 0.75s;
+    height:5rem;
+}
+
+/*Equivalent: tailwind sm*/
+.navbar-shown {
+    transition: all 0.75s;
+    height: 100vh;
+}
+
+/*Equivalent: tailwind md*/
+@media (min-width:768px) {
+    .navbar-shown {
+        transition-duration:0.75s;
+        transition: all 0.75s;
+        height:5rem;
+    }
+}
+
+.nav-col {
     overflow-y: hidden;
     overflow-x: hidden;
     text-align: center;
-    transition: 0.25s;
+    transition: all 0.75s;
     transform-origin: top;
     min-width: 100vw;
 }
 
-.nav-table-hidden {
-    transform: scaleY(0);
-    position: absolute;
-    top: 6rem;
-    left:auto;
+.nav-col-hidden {
+    transition: all 0.75s;
+    height: 1px;
+    margin-top:5rem
 }
 
-.nav-table-shown {
-    transform: scaleY(1);
+.nav-col-shown {
+    transition: all 0.75s;
+    height: 100vh;
+    padding-top:0
 }
 
 .nav-row {
     overflow-y: hidden;
     overflow-x: hidden;
-    transition: 0.35s;
+    transition: 0.5s;
     transform-origin: right;
 }
 
@@ -31,4 +59,19 @@
 
 .nav-row-shown {
     transform: scaleX(1);
+} 
+
+.logo {
+    position: absolute;
+    left:0;
+    top:0;
+    margin:1rem;
+}
+
+.menu-button {
+    position: absolute;
+    right:0;
+    top:0;
+    margin: 1rem;
+    margin-top: 1.3rem;
 }

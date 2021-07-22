@@ -2,3 +2,10 @@
     min-height: 10vh;
     padding-bottom: 75px;
 }
+
+span svg {
+    display: inline;
+    vertical-align: text-bottom;
+    margin: 3px;
+    margin-right: 0.5rem;
+}
