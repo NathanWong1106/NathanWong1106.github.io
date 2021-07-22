@@ -18,7 +18,7 @@ const Navbar = ({data}) => {
 
     return(
         <nav className="fixed top-0 z-50 min-w-full">
-            <div className={`flex flex-row duration-500 backdrop-filter backdrop-blur md:backdrop-blur-none ${isOpen ? "shadow-none md:shadow-lg lg:backdrop-blur-lg" : "shadow-lg md:shadow-none"} md:bg-transparent`}>
+            <div className={`flex flex-row duration-500 backdrop-filter backdrop-blur md:backdrop-blur-none ${isOpen ? "shadow-none md:shadow-lg md:backdrop-blur-lg" : "shadow-lg md:shadow-none"} md:bg-transparent`}>
                 <div className="transform duration-500 hover:scale-105 hover:rotate-12 flex-initial text-3xl md:text-4xl font-extrabold p-5 ml-5">
                     <a className="bg-clip-text text-transparent bg-gradient-to-r from-navy to-turquoise" href="#Intro">
                         <img src={logo} className="filter drop-shadow-lg h-12 w-12"/>
