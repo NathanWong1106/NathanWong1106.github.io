@@ -18,22 +18,27 @@ const Navbar = ({data}) => {
 
     return(
         <nav className="fixed top-0 z-50 min-w-full">
-            <div className={`flex flex-row duration-500 backdrop-filter backdrop-blur md:backdrop-blur-none ${isOpen ? "shadow-none md:shadow-lg md:backdrop-blur-lg" : "shadow-lg md:shadow-none"} md:bg-transparent`}>
-                <div className="transform duration-500 hover:scale-105 hover:rotate-12 flex-initial text-3xl md:text-4xl font-extrabold p-5 ml-5">
-                    <a className="bg-clip-text text-transparent bg-gradient-to-r from-navy to-turquoise" href="#Intro">
-                        <img src={logo} className="filter drop-shadow-lg h-12 w-12"/>
-                    </a>
+            <div className={`flex flex-col duration-500 backdrop-filter backdrop-blur md:backdrop-blur-none ${isOpen ? "shadow-lg md:backdrop-blur-lg" : "shadow-lg md:shadow-none"} md:bg-transparent`}>
+                <div className={`flex flex-row`}>
+                    <div className="transform duration-500 hover:scale-105 hover:rotate-12 flex-initial text-3xl md:text-4xl font-extrabold p-5 ml-5">
+                        <a className="bg-clip-text text-transparent bg-gradient-to-r from-navy to-turquoise" href="#Intro">
+                            <img src={logo} className="filter drop-shadow-lg h-12 w-12"/>
+                        </a>
+                    </div>
+                    <div className={`hidden md:backdrop-filter md:backgrop-blur-lg md:flex md:flex-row duration-200 justify-end nav-row ${isOpen ? "nav-row-shown" : "nav-row-hidden"} ml-auto mt-4 mx-5`}>
+                        {navLinks}
+                    </div>
+                    <div className="transform duration-500 hover:scale-105 ml-auto md:ml-5 mt-6 mx-5">
+                        <HamburgerButton isOpen={isOpen} onClick={() => openClose()}/>
+                    </div>
                 </div>
-                <div className={`hidden md:backdrop-filter md:backgrop-blur-lg md:flex md:flex-row duration-200 justify-end nav-row ${isOpen ? "nav-row-shown" : "nav-row-hidden"} ml-auto mt-4 mx-5`}>
-                    {navLinks}
-                </div>
-                <div className="transform duration-500 hover:scale-105 ml-auto md:ml-5 mt-6 mx-5">
-                    <HamburgerButton isOpen={isOpen} onClick={() => openClose()}/>
+                <div className={`flex-shrink z-50 m:visible md:hidden nav-table bg-transparent text-center font-bold ${isOpen ? "nav-table-shown" : "nav-table-hidden"}`}>
+                    { navLinks }
                 </div>
             </div>
-            <div className={`m:visible md:hidden nav-table shadow-xl bg-transparent text-center font-bold ${isOpen ? "nav-table-shown backdrop-filter backdrop-blur" : "nav-table-hidden"}`}>
+            {/* <div className={`sticky transform z-40 m:visible md:hidden nav-table shadow-xl bg-transparent text-center font-bold ${isOpen ? "nav-table-shown backdrop-filter backdrop-blur" : "nav-table-hidden"}`}>
                 { navLinks }
-            </div>
+            </div> */}
         </nav>
     );
 }

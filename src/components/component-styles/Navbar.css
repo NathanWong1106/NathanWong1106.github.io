@@ -2,12 +2,16 @@
     overflow-y: hidden;
     overflow-x: hidden;
     text-align: center;
-    transition: 0.35s;
+    transition: 0.25s;
     transform-origin: top;
+    min-width: 100vw;
 }
 
 .nav-table-hidden {
     transform: scaleY(0);
+    position: absolute;
+    top: 6rem;
+    left:auto;
 }
 
 .nav-table-shown {
