@@ -30,7 +30,7 @@ const LINKS = [
 const Footer = (props) => {
     return (
         <section>
-            <div className="footer-bg bg-black text-white text-center">
+            <div className="footer-bg bg-black bg-opacity-20 backdrop-filter backdrop-blur-sm drop-shadow-2xl text-center">
                 <div className="text-5xl font-extrabold py-10">
                     <span className="bg-clip-text text-transparent bg-gradient-to-l from-green-400 to-blue-500">
                         Contact:
@@ -39,27 +39,13 @@ const Footer = (props) => {
                 <div className="flex flex-col md:flex-row flex-wrap justify-center items-center mx-5 md:mx-10 lg:mx-20">
                     {
                         LINKS.map(link => (
-                            <span>
+                            <span key={link.href}>
                                 <FooterLink href={link.href}>
                                     {link.SVG} {link.name}
                                 </FooterLink>
                             </span>
                         ))
                     }
-
-
-                    {/* <FooterLink href="mailto:wongnathan1106@gmail.com">
-                        Email
-                    </FooterLink>
-                    <FooterLink href="https://github.com/NathanWong1106">Github</FooterLink>
-                    <FooterLink href="https://www.linkedin.com/in/nathanwong1106/">
-                        <span>
-                            <svg className="fill-current h-5 w-5" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-                                <path d="M449.446 0C483.971 0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97 0 449.446V62.554C0 28.03 28.029 0 62.554 0h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539 0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804 0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181 0 225.717 0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135 0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165 0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/>
-                            </svg>
-                            LinkedIn
-                        </span>
-                    </FooterLink> */}
                 </div>
             </div>
         </section>
