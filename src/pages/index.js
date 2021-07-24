@@ -30,7 +30,7 @@ const IndexPage = () => {
         <div className="flex flex-col overflow-hidden justify-center content-center min-h-screen cursor-default">
           <section id="Intro" className="flex flex-col min-h-screen justify-center content-center text-center">
             <div className="text-5xl font-extrabold slide-in-from-left">
-              <span className="bg-clip-text text-transparent bg-gradient-to-l from-green-400 to-blue-500">
+              <span className="bg-clip-text text-transparent bg-gradient-to-l from-green-400 to-blue-500 underline">
                 Hey, I'm Nathan
               </span>
             </div> 

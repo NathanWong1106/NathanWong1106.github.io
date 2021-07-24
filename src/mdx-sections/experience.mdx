@@ -4,6 +4,7 @@ order: 2
 ---
 
 import AnimateInViewSection from "../components/AnimateInViewSection"
+import CompanyDesc from "../components/CompanyDesc"
 
 <AnimateInViewSection animName="slide-in-from-left">
     <div className="text-5xl font-extrabold">
@@ -13,10 +14,16 @@ import AnimateInViewSection from "../components/AnimateInViewSection"
     </div> 
     <hr className="left-align"/>
 </AnimateInViewSection>
-<AnimateInViewSection animName="slide-in-from-right">
-    <div className="mt-5 text-xl text-turquoise">
+<div className="mt-5 text-xl text-turquoise">
+    <AnimateInViewSection animName="slide-in-from-right">
         <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate euismod augue. Duis in libero sed nisl vulputate malesuada sit amet vel lorem. Mauris blandit diam et facilisis mollis. Sed sodales purus dui, ut porta enim ultrices id. Aenean ullamcorper tincidunt turpis. Duis faucibus urna nisl, quis fermentum eros convallis ac. Curabitur scelerisque turpis nisi, vitae viverra lectus laoreet at. Nunc et malesuada erat. Ut mauris metus, dignissim quis velit eget, rhoncus sagittis mauris. In hac habitasse platea dictumst.
+            Here lie the companies who <strike>somehow</strike> trusted me enough to work on their codebases:
         </span>
-    </div>
-</AnimateInViewSection>
+    </AnimateInViewSection>
+    <CompanyDesc name="Genexis Design Inc." time="Oct 2020 - Jan 2021" tech="C#, Unity Engine">
+        <ul className="list-disc list-inside">
+            <li>Worked closely with others to design an Android CAD model viewing application</li>
+            <li>Implemented various features such as (de)serialization, UI updates, markup, and deep-linking support</li>
+        </ul>
+    </CompanyDesc>
+</div>
