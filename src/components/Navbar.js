@@ -28,7 +28,8 @@ const Navbar = ({data}) => {
     /* For some reason md:navbar-shown does the exact opposite of what is expected... if it works don't touch it lol */
     return(
         <nav className={`fixed transition duration-500 top-0 z-50 min-w-full backdrop-filter overflow-hidden
-        ${isOpen ? "shadow-lg backdrop-blur navbar-shown" : "shadow-lg md:shadow-none navbar-hidden backdrop-blur md:backdrop-blur-none"}`}>
+        ${isOpen ? "shadow-lg backdrop-blur-sm bg-black bg-opacity-20 navbar-shown" : 
+        "shadow-lg bg-black bg-opacity-20 md:shadow-none navbar-hidden backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"}`}>
             <div className="z-50 logo">
                 <a href="#Intro">
                     <img src={logo} className="filter drop-shadow-lg h-12 w-12"/>
