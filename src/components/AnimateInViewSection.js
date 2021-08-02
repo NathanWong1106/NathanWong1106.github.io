@@ -2,22 +2,26 @@ import React, {useState, useRef, useEffect} from "react"
 import '../styles/global.css'
 
 //Credit to: https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4
+
 const AnimateInViewSection = (props) => {
     const [isVisible, setVisible] = useState(false);
-    const dom = useRef();
+    const [repeat] = useState(props.repeat ? props.repeat : false); //default run once
+    const elem = useRef();
 
     useEffect(() => {
         const observer = new IntersectionObserver(e => {
             e.forEach(entry => {
-                setVisible(entry.isIntersecting);
+                if(entry.isIntersecting || repeat){
+                    setVisible(entry.isIntersecting);
+                }
             })
         })
-        observer.observe(dom.current)
-        return () => observer.unobserve(dom.current);
+        observer.observe(elem.current)
+        return () => observer.unobserve(elem.current);
     }, [])
 
     return(
-        <section className={`${isVisible ? "visible " + props.animName : "invisible"}`} ref={dom}>
+        <section className={`${isVisible ? "visible " + props.animName : "invisible"}`} ref={elem}>
             {props.children}
         </section>
     );

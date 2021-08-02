@@ -7,7 +7,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Footer from "../components/Footer"
 
-//TODO: Animate background? Floating Bubbles of random size?
 const IndexPage = () => {
   const data = useStaticQuery(graphql
     `query MyQuery {

@@ -4,6 +4,7 @@ order: 4
 ---
 
 import AnimateInViewSection from "../components/AnimateInViewSection"
+import AccordionElement from "../components/AccordionElement"
 
 <AnimateInViewSection animName="slide-in-from-left">
     <div className="text-5xl font-extrabold">
@@ -14,10 +15,65 @@ import AnimateInViewSection from "../components/AnimateInViewSection"
     <hr className="left-align"/>
 </AnimateInViewSection>
 <AnimateInViewSection animName="slide-in-from-right">
-    <div className="mt-5 text-xl text-turquoise">
-        <span>
-            <div className="text-3xl"><b>WIP</b></div>
-            <div><small>In the meantime visit my GitHub (below)</small></div>
-        </span>
+    <div className="text-xl text-turquoise my-5">
+        What is free time?
     </div>
+</AnimateInViewSection>
+<AnimateInViewSection animName="slide-in-from-right">
+    <AccordionElement title="Hand Gesture Detector">
+        <b>Tools/Languages: </b>Python, Tensorflow, MediaPipe, OpenCV
+        <br/>
+        <b>Repository: </b><a className="underline" target="_blank" href="https://github.com/NathanWong1106/HandDetectionProject">Link</a>
+        <div className="mt-4">
+            By capturing and training on landmark data from my hand, I was able to make a ML model that could predict a hand gesture captured
+            on a webcam. The model can also be extended to recognize custom hand gestures.
+            Curently there are no further projects planned to incorporate this, but it certainly could be implemented somewhere in the future.
+            More details on the specific implementation and training can be found in the Github link above.
+        </div>
+    </AccordionElement>
+</AnimateInViewSection>
+<AnimateInViewSection animName="slide-in-from-right">
+    <AccordionElement title="Pixelator">
+        <b>Tools/Languages: </b>Java, Swing
+        <br/>
+        <b>Repository: </b><a className="underline" target="_blank" href="https://github.com/NathanWong1106/Pixelator">Link</a>
+        <div className="mt-4">
+            Relatively simple program made as the summative project for Gr.12 Computer Science. As input it takes a regular photo/image then 
+            attempts to convert it into pixel art through an algorithmic pipeline. The user also gets to choose between 3 processing algorithms
+            and pixel dimensions. While the end result is not necessarily complicated, the program successfully implements some key concepts such
+            as OOP, threading, data structures (maps, arrays, lists, etc), and custom algorithms.
+        </div>
+    </AccordionElement>
+</AnimateInViewSection>
+<AnimateInViewSection animName="slide-in-from-right">
+    <AccordionElement title="NoodleBot">
+        <b>Tools/Languages: </b>JavaScript, Node.js, MongoDB, Heroku, Various APIs and libraries
+        <br/>
+        <b>Repository: </b><a className="underline" target="_blank" href="https://github.com/NathanWong1106/NoodleBot_V2">Link</a>
+        <div className="mt-4">
+            The codebase for this project makes me want to go blind as it was one of the first "large (perhaps largest?)" personal projects I ever got into.
+            Suboptimal design decisions, lack of overall structure, misunderstanding async calls, and repetitive code are some of the major problems that could be fixed.
+            Despite that, I learned so much while making the bot that it has to be in this list. This is a Discord bot with a plethora of features including:
+                <ol className="my-4 list-disc list-inside ml-4"> 
+                    <li>Currency system</li>
+                    <li>Custom playlists</li>
+                    <li>Persistent MongoDB database</li>
+                    <li>Playing music</li>
+                    <li>YouTube, Reddit, and more APIs</li>
+                </ol>
+            It's been quite a long time since I last worked on this project but perhaps I'll continue to remake the bot in the future.
+        </div>
+    </AccordionElement>
+</AnimateInViewSection>
+<AnimateInViewSection animName="slide-in-from-right">
+    <AccordionElement title="This Website">
+        <b>Tools/Languages: </b>JavaScript, Node.js, React, Gatsby, TailwindCSS
+        <br/>
+        <b>Repository: </b><a className="underline" target="_blank" href="https://github.com/NathanWong1106/NathanWong1106.github.io">Link</a>
+        <div className="mt-4">
+            A work in progress (one that will probably never be finished). This is a static website hosted using Github Pages and built with Gatsby.
+            The pre-compiled code is written in React and styled using TailwindCSS and some custom CSS (I plan to learn Sass soon). No idea how many
+            sacred UI/UX conventions I've broken here :)
+        </div>
+    </AccordionElement>
 </AnimateInViewSection>

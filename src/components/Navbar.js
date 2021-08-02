@@ -25,7 +25,6 @@ const Navbar = ({data}) => {
         return <div className={`transform duration-500 my-3 mx-5 hover:scale-105 text-xl`} key={node.id}><a className="text-white hover:text-lightGray" href={`#${node.frontmatter.title}`}>{node.frontmatter.title}</a></div>
     });
 
-    /* For some reason md:navbar-shown does the exact opposite of what is expected... if it works don't touch it lol */
     return(
         <nav className={`fixed transition duration-500 top-0 z-50 min-w-full backdrop-filter overflow-hidden
         ${isOpen ? "shadow-lg backdrop-blur-sm bg-black bg-opacity-20 navbar-shown" : 
