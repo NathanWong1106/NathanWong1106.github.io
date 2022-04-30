@@ -22,5 +22,12 @@ module.exports = {
       },
       __key: "projects",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: 'Nathan Wong',
+        icon: "src/images/Logo.png"
+      }
+    },
   ],
 };

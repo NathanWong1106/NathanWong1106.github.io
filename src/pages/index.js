@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar"
 import { graphql, useStaticQuery } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Footer from "../components/Footer"
+import logo from "../images/Logo.png"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql
@@ -24,6 +25,9 @@ const IndexPage = () => {
 
   return (
     <main>
+      <head>
+        <title>Nathan Wong</title>
+      </head>
       <div className="content-container">
         <Navbar data={data}/>
         <div className="flex flex-col overflow-hidden justify-center content-center min-h-screen cursor-default">
