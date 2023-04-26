@@ -10,7 +10,7 @@ interface AboutProps {
 export const About: React.FC<AboutProps> = (props: AboutProps) => {
     return (
         <SectionCard title='About' subtitle='What am I supposed to write about myself?'>
-            <Typography variant="lead">
+            <Typography variant="paragraph">
                 I'm a second year Computer Science Co-op student specializing in Software Engineering at the University of Toronto.
                 Currently, I have 12 months of experience in software development roles.
                 <br/><br/>

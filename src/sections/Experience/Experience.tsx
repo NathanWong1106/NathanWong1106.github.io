@@ -25,29 +25,34 @@ export const Experience: React.FC<ExperienceProps> = (props: ExperienceProps) =>
             <div className='pl-10 my-4 list-disc'>
                 <ul className='list-disc'>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Implemented new features, bug fixes, and unit tests on server (C#, MSSQL Server), client (Angular, Jest, TypeScript, Java, GWT), and client API facade (Java, Spring)
                         </Typography>
                     </li>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Utilized feature branching with VCS such as Git, GitHub, and Stash (Bitbucket) and performed code reviews
                         </Typography>
                     </li>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Assisted with application deployments, application monitoring using New Relic, and fielded questions from international clients during on-call rotation
                         </Typography>
                     </li>
 
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Collaborated with UX, Product, and developers to design technical solutions for new product requirements
                         </Typography>
                     </li>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Used Jira to create/track tickets and participated in Agile events such as daily standup, planning, refinement, and retrospectives
+                        </Typography>
+                    </li>
+                    <li>
+                        <Typography variant="paragraph">
+                            Concisely presented my work and fielded questions from internal and external teams during bi-weekly demos
                         </Typography>
                     </li>
                 </ul>
@@ -61,12 +66,12 @@ export const Experience: React.FC<ExperienceProps> = (props: ExperienceProps) =>
             <div className='pl-10 mt-4 list-disc'>
                 <ul className='list-disc'>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Worked closely with others to design an Android CAD model viewing application
                         </Typography>
                     </li>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Implemented various features such as (de)serialization, UI updates, markup, and deep-linking support
                         </Typography>
                     </li>

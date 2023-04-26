@@ -13,7 +13,7 @@ export const SidebarButton: React.FC<SidebarButtonProps> = (props: SidebarButton
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <Tooltip className={(!props.isOpen && props.text ? 'visible' : 'invisible') + ' backdrop-blur-lg bg-blue-gray-300/25'} content={props.text} placement='right' animate={{
+        <Tooltip className={(!props.isOpen && props.text ? 'visible' : 'invisible') + ' backdrop-blur-lg backdrop-saturate-150 bg-blue-gray-300 bg-opacity-30 shadow-lg'} content={props.text} placement='right' animate={{
             mount: { scale: 1, x: 10 },
             unmount: { scale: 0, x: 0 },
           }}>

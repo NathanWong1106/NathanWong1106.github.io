@@ -11,9 +11,9 @@ interface SectionCardProps {
 
 export const SectionCard: React.FC<SectionCardProps> = (props: SectionCardProps) => {
     return (
-        <div className="backdrop-blur-lg bg-blue-gray-100/5 rounded-xl shadow-2xl p-8 w-full">
+        <div className="backdrop-blur-lg backdrop-saturate-150 bg-blue-gray-300 bg-opacity-30 rounded-xl shadow-2xl p-8 w-full">
             <Typography variant="h1">{props.title}</Typography>
-            <Typography variant="h5">{props.subtitle}</Typography>
+            <Typography variant="lead">{props.subtitle}</Typography>
             <hr className='mt-5 mb-5'/>
             {
                 props.children

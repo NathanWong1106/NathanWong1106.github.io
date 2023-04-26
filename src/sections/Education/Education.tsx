@@ -22,12 +22,12 @@ export const Education: React.FC<EducationProps> = (props: EducationProps) => {
             <div className='pl-10 list-disc'>
                 <ul className='list-disc'>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Scholarship - University of Toronto Scholar ($7500)
                         </Typography>
                     </li>
                     <li>
-                        <Typography variant="lead">
+                        <Typography variant="paragraph">
                             Dean's List 2021-2022
                         </Typography>
                     </li>
