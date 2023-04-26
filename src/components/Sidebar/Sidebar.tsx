@@ -108,6 +108,7 @@ export const Sidebar: React.FC<SidebarProps> = (props: SidebarProps) => {
                                         return (
                                             <button onClick={() => {
                                                 window.location.replace(`/#${option.name}`);
+                                                document.getElementsByTagName("BODY")[0].setAttribute("style", "overflow:visible");
                                                 setIsOpen(false);
                                             }}>
                                                 <Typography className="py-5" variant="h3">
