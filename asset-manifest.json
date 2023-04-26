@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6793ad05.css",
+    "main.js": "/static/js/main.2556aa34.js",
+    "static/js/787.1e8c63eb.chunk.js": "/static/js/787.1e8c63eb.chunk.js",
+    "static/media/github.svg": "/static/media/github.4d1fd232c55be76e195680ed77e5de3e.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.392e50d5afb2fa04116c98af280d8513.svg",
+    "index.html": "/index.html",
+    "static/media/contact.svg": "/static/media/contact.2a73b196d5cafb8dc6173c9dcb627c2c.svg",
+    "static/media/about.svg": "/static/media/about.1506939f4e3404ba4ba38fb8f883ed9b.svg",
+    "static/media/projects.svg": "/static/media/projects.05b90020362cdb5b9ef85639f8797f23.svg",
+    "static/media/tech.svg": "/static/media/tech.bd5c514443149edb9e58cc4f6de68cb9.svg",
+    "static/media/experience.svg": "/static/media/experience.909f1a2ba255d43b8fd9e7945bba1044.svg",
+    "static/media/email.svg": "/static/media/email.88231a0cc70c237891e889cae5912503.svg",
+    "static/media/education.svg": "/static/media/education.696430cc9f45628eabafbbce056aa6c0.svg",
+    "static/media/home.svg": "/static/media/home.3072c7562a74cdfad2f6426369e944ea.svg",
+    "static/media/menu.svg": "/static/media/menu.f8560fdfb5eb057c78260b3beb4ff2ab.svg",
+    "main.6793ad05.css.map": "/static/css/main.6793ad05.css.map",
+    "main.2556aa34.js.map": "/static/js/main.2556aa34.js.map",
+    "787.1e8c63eb.chunk.js.map": "/static/js/787.1e8c63eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6793ad05.css",
+    "static/js/main.2556aa34.js"
+  ]
+}
