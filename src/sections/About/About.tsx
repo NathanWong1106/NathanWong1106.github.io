@@ -11,7 +11,7 @@ export const About: React.FC<AboutProps> = (props: AboutProps) => {
     return (
         <SectionCard title='About' subtitle='What am I supposed to write about myself?'>
             <Typography variant="paragraph">
-                I'm a second year Computer Science Co-op student specializing in Software Engineering at the University of Toronto.
+                I'm a third year Computer Science Co-op student specializing in Software Engineering at the University of Toronto.
                 Currently, I have 12 months of experience in software development roles.
                 <br/><br/>
                 Most of the time I'll be busy with school - spitting out mathematical vomit into LaTeX until a proof works out.
